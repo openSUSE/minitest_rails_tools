@@ -1,0 +1,13 @@
+Version 0.1.0 (2013-03-13)
+
+- association_matchers
+  - must_belong_to :foo
+  - must_have_one :foo  
+  - must_have_many :foos
+  - must_have_many_through :foos, :bars
+  - must_have_and_belong_to_many :foos
+- validation_matchers 
+  - must_validate_presence_of :foo
+  - must_validate_uniqueness_of :foo
+- helper_extension  
+  - helper :foo_helper
