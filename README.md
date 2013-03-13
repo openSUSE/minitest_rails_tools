@@ -1,4 +1,4 @@
-Minitest-Rails-Tools
+# Minitest-Rails-Tools
 
 
 This is a collection of little helpers to make working with Rails and Minitest a bit easier.
