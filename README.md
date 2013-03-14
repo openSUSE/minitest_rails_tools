@@ -49,20 +49,18 @@ You may use this to test a couple of Rails' validations in your tests:
 
     subject { FactoryGirl.create :foo }
     
-    must_validate_presence_of :lol
-    must_validate_uniqueness_of :lol
+    must_validate_presence_of :bar
+    must_validate_uniqueness_of :baz
 
 
 ### Helper Extension
 
-This allows you to define a helper as your subject:
+This allows you to define a helper as your subject (and then call your helper methods on it):
 
     subject { helper :foo_helper }
-
-Now you can call your helper methods on your subject:
-
+    
     subject.do_my_stuff.must_equal 'OK'
 
 
-Copyright © 2013 SUSE released under the MIT license. For full details see LICENSE included in this distribution.
 
+Copyright © 2013 SUSE released under the MIT license. For full details see LICENSE included in this distribution.
