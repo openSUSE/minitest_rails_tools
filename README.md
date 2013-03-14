@@ -59,6 +59,9 @@ This allows you to define a helper as your subject:
 
     subject { helper :foo_helper }
 
+Now you can call your helper methods on your subject:
+
+    subject.do_my_stuff.must_equal 'OK'
 
 
 Copyright © 2013 SUSE released under the MIT license. For full details see LICENSE included in this distribution.
