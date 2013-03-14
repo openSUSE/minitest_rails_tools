@@ -1,11 +1,11 @@
 $LOAD_PATH.unshift 'lib'
 
 Gem::Specification.new do |gem|
-  gem.name     = 'minitest-rails-tools'
+  gem.name     = 'minitest_rails_tools'
   gem.version  = '0.1.0'
   gem.date     = Time.now.strftime('%F')
   gem.summary  = 'Smoothen Minitest/Rails integration'
-  gem.homepage = 'http://github.com/b4mboo/minitest-rails-tools'
+  gem.homepage = 'http://github.com/b4mboo/minitest_rails_tools'
   gem.email    = 'bamboo@suse.com'
   gem.authors  = ['Dominik Bamberger']
 
