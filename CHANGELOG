@@ -1,3 +1,8 @@
+Version 0.1.2 (2013-03-14)
+
+- remove helper_proxy
+
+
 Version 0.1.1 (2013-03-14)
 
 - remove factory_girl dependency
