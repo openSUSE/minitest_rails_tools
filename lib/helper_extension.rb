@@ -1,4 +1,4 @@
-class HelperProxy
+class HelperExtension
 
   attr_accessor :current_methods
 
@@ -15,11 +15,6 @@ class HelperProxy
   end
 end
 
-
-module HelperExtension
-
-  def helper(name)
-    HelperProxy.new(name)
-  end
-
+def helper(name)
+  HelperExtension.new(name)
 end
