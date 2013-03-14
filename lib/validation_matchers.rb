@@ -13,8 +13,8 @@ end
 def must_validate_uniqueness_of(attribute_name)
   it "validates_uniqueness_of :#{attribute_name.to_s.parameterize.underscore}" do
     other = subject.class.new
-    subject.send "#{attribute_name}=".to_sym, other.send(attribute_name)
-    subject.valid?.must_equal false
-    subject.errors.messages[attribute_name.to_sym].must_include "has already been taken"
+    other.send "#{attribute_name}=".to_sym, subject.send(attribute_name)
+    other.valid?.must_equal false
+    other.errors.messages[attribute_name.to_sym].must_include "has already been taken"
   end
 end
