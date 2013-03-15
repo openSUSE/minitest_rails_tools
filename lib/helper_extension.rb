@@ -1,6 +1,8 @@
 class HelperExtension
 
-  attr_accessor :current_methods
+  include ActionView::Helpers
+
+ attr_accessor :current_methods, :output_buffer
 
   def initialize(name)
     @current_methods ||= []
@@ -13,6 +15,12 @@ class HelperExtension
     @current_methods = klass.instance_methods
     self.class.send(:include, klass)
   end
+
+  # We don't need this protection in our tests.
+  def protect_against_forgery?
+    false
+  end
+
 end
 
 def helper(name)

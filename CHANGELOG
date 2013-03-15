@@ -1,3 +1,8 @@
+Version 0.1.4 (2013-03-15)
+
+- include ActionView::Helpers
+
+
 Version 0.1.3 (2013-03-14)
 
 - fix must_validate_uniqueness_of
