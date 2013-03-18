@@ -3,7 +3,7 @@
 
 This is a collection of little helpers to make working with Rails and Minitest a bit easier.
 
-_NOTE: This is definitely a work in progress. I use this gem in two of my applications and will continue to add stuff to it, as well as fixing bugs._
+_NOTE: This is a work in progress. I'm using this gem in two of my applications and I'm going to continue to add stuff to it, as well as fixing bugs._
 
 
 ## Installation
