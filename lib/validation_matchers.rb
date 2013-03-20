@@ -3,7 +3,7 @@
 #   subject { FactoryGirl.create :foo }
 
 def must_validate_presence_of(attribute_name, options = {})
-  it title('validates_presence_of', attribute_name, options) do
+  it title(__method__.to_s[4..-1], attribute_name, options) do
     subject.send "#{attribute_name}=".to_sym, nil
     subject.wont_be :valid?
     message = options[:message] || "can't be blank"
@@ -12,7 +12,7 @@ def must_validate_presence_of(attribute_name, options = {})
 end
 
 def must_validate_uniqueness_of(attribute_name, options = {})
-  it title('validates_uniqueness_of', attribute_name, options) do
+  it title(__method__.to_s[4..-1], attribute_name, options) do
     other = subject.class.new
     other.send "#{attribute_name}=".to_sym, subject.send(attribute_name)
     other.wont_be :valid?
@@ -22,7 +22,7 @@ def must_validate_uniqueness_of(attribute_name, options = {})
 end
 
 def must_validate_length_of(attribute_name, options = {})
-  it title('validates_length_of', attribute_name, options) do
+  it title(__method__.to_s[4..-1], attribute_name, options) do
     if options[:minimum]
       subject.send "#{attribute_name}=".to_sym, (0..options[:minimum] - 1).to_a
       subject.wont_be :valid?
