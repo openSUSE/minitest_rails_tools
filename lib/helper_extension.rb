@@ -5,6 +5,7 @@ class HelperExtension
  attr_accessor :current_methods, :output_buffer
 
   def initialize(name)
+    @output_buffer = ''
     @current_methods ||= []
     # Remove existing instance methods.
     @current_methods.each do |method_name|
