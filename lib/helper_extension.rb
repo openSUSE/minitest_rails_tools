@@ -2,7 +2,7 @@ class HelperExtension
 
   include ActionView::Helpers
 
- attr_accessor :current_methods, :output_buffer
+  attr_accessor :current_methods, :output_buffer
 
   def initialize(name)
     @output_buffer = ''
