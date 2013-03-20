@@ -1,3 +1,13 @@
+Version 0.1.5 (2013-03-20)
+
+- initialize output_buffer with empty string
+- allow to override validation message
+- use correct minitest syntax
+- add must_validate_length_of
+- refactor spec generation
+- show options hash in spec title
+
+
 Version 0.1.4 (2013-03-15)
 
 - include ActionView::Helpers
