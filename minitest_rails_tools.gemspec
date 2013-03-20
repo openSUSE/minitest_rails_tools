@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.version  = open('VERSION').read.strip
   gem.date     = Time.now.strftime('%F')
   gem.summary  = 'Smoothen Minitest/Rails integration'
-  gem.homepage = 'http://github.com/b4mboo/minitest_rails_tools'
+  gem.homepage = 'http://github.com/openSUSE/minitest_rails_tools'
   gem.email    = 'bamboo@suse.com'
   gem.authors  = ['Dominik Bamberger']
 
