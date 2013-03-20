@@ -22,14 +22,16 @@ def must_validate_uniqueness_of(attribute, options = {})
 end
 
 def must_validate_length_of(attribute, options = {})
-  spec(__method__, attribute, options) do
-    if options[:minimum]
+  if options[:minimum]
+    spec(__method__, attribute, options.except(:maximum)) do
       subject.send "#{attribute}=".to_sym, (0..options[:minimum] - 1).to_a
       subject.wont_be :valid?
       message = options[:message] || "is too short (minimum is #{options[:minimum]}"
       subject.errors.messages[attribute.to_sym].must_include message
     end
-    if options[:maximum]
+  end
+  if options[:maximum]
+    spec(__method__, attribute, options.except(:minimum)) do
       subject.send "#{attribute}=".to_sym, (0..options[:maximum] + 1).to_a
       subject.wont_be :valid?
       message = options[:message] || "is too long (maximum is #{options[:maximum]}"
