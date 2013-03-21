@@ -25,6 +25,9 @@ class HelperExtension
 
 end
 
+# Allow to use url_helpers inside the tests.
+include Rails.application.routes.url_helpers
+
 def helper(name)
   HelperExtension.new(name)
 end
