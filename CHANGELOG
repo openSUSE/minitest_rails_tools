@@ -1,3 +1,7 @@
+Version 0.1.8 (2013-03-21)
+- move controller setup to separate class
+
+
 Version 0.1.7 (2013-03-21)
 - add application_integration
 
