@@ -1,3 +1,7 @@
+Version 0.1.8 (2013-03-21)
+- setup @routes in before block
+
+
 Version 0.1.7 (2013-03-21)
 - add application_integration
 
