@@ -1,6 +1,7 @@
 class HelperExtension
 
   include ActionView::Helpers
+  include Rails.application.routes.url_helpers
 
   attr_accessor :current_methods, :output_buffer
 

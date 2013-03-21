@@ -1,5 +1,8 @@
-Version 0.1.5 (2013-03-20)
+Version 0.1.6 (2013-03-21)
+- include url_helpers
 
+
+Version 0.1.5 (2013-03-20)
 - initialize output_buffer with empty string
 - allow to override validation message
 - use correct minitest syntax
@@ -9,27 +12,22 @@ Version 0.1.5 (2013-03-20)
 
 
 Version 0.1.4 (2013-03-15)
-
 - include ActionView::Helpers
 
 
 Version 0.1.3 (2013-03-14)
-
 - fix must_validate_uniqueness_of
 
 
 Version 0.1.2 (2013-03-14)
-
 - remove helper_proxy
 
 
 Version 0.1.1 (2013-03-14)
-
 - remove factory_girl dependency
 
 
 Version 0.1.0 (2013-03-13)
-
 - association_matchers
   - must_belong_to :foo
   - must_have_one :foo
