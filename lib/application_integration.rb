@@ -9,8 +9,4 @@ class MiniTest::Spec
   include ActiveSupport::Testing::Assertions
   include ActionController::TestCase::Behavior
 
-  before do
-    @routes = Rails.application.routes
-  end
-
 end
