@@ -36,10 +36,6 @@ class Object
 
   include MiniTest::Assertions
 
-  # Usage:
-  # Foo.must_differ('count', -1) do
-  #   delete :destroy, :id => foo.to_param
-  # end
   def must_differ(expression, difference = 1, message = nil, &block)
     metaclass = class << self; self end
     metaclass.send(:define_method, :callback)
