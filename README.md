@@ -19,6 +19,24 @@ Afterwards require it in your `test_helper.rb`:
 Alternatively, you could also just require certain parts of the tools.
 See the respective section for the command to add only a specific part.
 
+In order to get rid of TestUnit, just open your `application.rb` and change
+the following lines:
+
+    # Pick the frameworks you want:
+    # require 'rails/all'
+    require "active_record/railtie"
+    require "action_controller/railtie"
+    require "action_mailer/railtie"
+    require "active_resource/railtie"
+    require "sprockets/railtie"
+    # require "rails/test_unit/railtie"
+
+For generators to use MiniTest instead of TestUnit (additionally) change this:
+
+    config.generators do |g|
+      g.test_framework :mini_test, :spec => true, :fixture => true
+    end
+
 
 ## Tools
 
