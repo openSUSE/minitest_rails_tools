@@ -1,3 +1,11 @@
+Version 0.2.0 (2013-05-14)
+- add expectations
+- add subfolders
+- require 'minitest/autorun'
+- use require_relative
+- add rails and minitest as runtime dependency
+
+
 Version 0.1.8 (2013-03-21)
 - move controller setup to separate class
 
