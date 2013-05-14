@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+
 # Allows for some automagic association tests.
 # Expects 'subject' to be defined. E.g.
 #   subject { FactoryGirl.create :foo }

@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+
 module MiniTest::Assertions
 
   def assert_count(value, list)

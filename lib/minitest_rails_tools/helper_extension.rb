@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+
 class HelperExtension
 
   include ActionView::Helpers

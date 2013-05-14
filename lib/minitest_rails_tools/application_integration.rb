@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+
 class MiniTest::Spec
   include Rails.application.routes.url_helpers
 end

@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+
 # Allows for some automagic association tests.
 
 def must_belong_to(association_name)

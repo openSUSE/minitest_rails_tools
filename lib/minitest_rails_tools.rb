@@ -1,4 +1,3 @@
-require 'minitest/autorun'
 require_relative 'minitest_rails_tools/application_integration'
 require_relative 'minitest_rails_tools/association_matchers'
 require_relative 'minitest_rails_tools/expectations'
