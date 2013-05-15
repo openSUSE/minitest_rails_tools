@@ -8,6 +8,7 @@ Gem::Specification.new do |gem|
   gem.homepage = 'http://github.com/openSUSE/minitest_rails_tools'
   gem.email    = 'bamboo@suse.com'
   gem.authors  = ['Dominik Bamberger']
+  s.license    = 'MIT'
 
   gem.description = 'A collection of helpers for integrating Rails and Minitest.'
 
