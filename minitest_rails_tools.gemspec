@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.files         = %w( LICENSE README.md )
   gem.files        += Dir.glob('lib/**/*')
   gem.require_paths = ['lib']
-  gem.add_runtime_dependency 'rails', '< 4'
+  gem.add_runtime_dependency 'rails', '~> 4.0'
   gem.add_runtime_dependency 'minitest', '< 5'
 end
